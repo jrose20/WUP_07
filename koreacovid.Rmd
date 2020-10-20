@@ -75,7 +75,6 @@ fisher.test(table1)
 (1/4)/(3/9)
 ```
 
-
-
 ## Conclusions
 
+There is an increased chance of men dieing from covid19 than there is of women dieing. This was concluded through the use of the fisher exact thest where the same estimates equal the odd ratio equal 2.3                                                                      
