@@ -1,7 +1,7 @@
 ---
 title: "covid 19"
-author: "Dr K"
-date: "5/2/2020"
+author: "Jordan Rose"
+date: "10/19/2020"
 output:
   html_document: default
   pdf_document: default
@@ -44,13 +44,16 @@ barchartGC(~result + Sex,data=kRdata, main ="Frequency Bar Chart")
 
   
 ### this bar chart is displaying in total frequency terms our data.  Clearly there are a lot less dead people than alive people as is reflected by the sizes of the bars in the display.  
+```{r}
+barchartGC(~result + Sex,data=kRdata, type = "percent", main ="Frequency Bar Chart")
+```
+
+Based off the this chart it shows that 100% of the alive group, about 59% are women and 43% are men. Of the dead group, about 40% are women and about 62% are men. 
 
 
-
-
-
-  
 ## Numerical results
+
+
 ###Numerical Summaries  
 
 ```{r}
@@ -59,8 +62,18 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
+Of the people alive 56% are female and 46% are male and for the people that are dead, 36% of them are female and 64% of them are men. 
+
 ## Inferential results 
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+```{r}
+(1/4)/(3/9)
+```
 
 
 
